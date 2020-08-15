@@ -26,7 +26,7 @@ To install the dependencies via [Composer](http://getcomposer.org/), add the fol
 Then run:
 
 ```
-composer require xvilo/TRACK-api-server:dev-master
+composer require xvilo/track-api-server:dev-master
 ```
 
 to add the generated openapi bundle as a dependency.
