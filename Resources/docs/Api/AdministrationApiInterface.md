@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**listTotalsForYearAndWeek**](AdministrationApiInterface.md#listTotalsForYearAndWeek) | **GET** /totals/{year}/{week} | List all timers
+[**listTotalsForYearAndWeek**](AdministrationApiInterface.md#listTotalsForYearAndWeek) | **GET** /api/v1//totals/{year}/{week} | List all timers
 
 
 ## Service Declaration

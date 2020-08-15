@@ -4,7 +4,7 @@
 
 # administration
 open_api_server_administration_listtotalsforyearandweek:
-    path:     /totals/{year}/{week}
+    path:     /api/v1//totals/{year}/{week}
     methods:  [GET]
     defaults:
         _controller: open_api_server.controller.administration:listTotalsForYearAndWeekAction
@@ -14,7 +14,7 @@ open_api_server_administration_listtotalsforyearandweek:
 
 # timers
 open_api_server_timers_listtimers:
-    path:     /timers
+    path:     /api/v1/timers
     methods:  [GET]
     defaults:
         _controller: open_api_server.controller.timers:listTimersAction

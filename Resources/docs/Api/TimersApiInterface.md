@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**listTimers**](TimersApiInterface.md#listTimers) | **GET** /timers | List all timers
+[**listTimers**](TimersApiInterface.md#listTimers) | **GET** /api/v1/timers | List all timers
 
 
 ## Service Declaration
