@@ -17,10 +17,13 @@
 
 namespace Xvilo\Track\ApiServer\Service;
 
+use JMS\Serializer\AbstractVisitor;
 use JMS\Serializer\Context;
 use JMS\Serializer\JsonDeserializationVisitor;
+use JMS\Serializer\Visitor\DeserializationVisitorInterface;
+use JMS\Serializer\Visitor\Factory\DeserializationVisitorFactory;
 
-class StrictJsonDeserializationVisitor extends JsonDeserializationVisitor
+class StrictJsonDeserializationVisitor extends AbstractVisitor implements DeserializationVisitorFactory
 {
     /**
      * {@inheritdoc}
@@ -68,5 +71,18 @@ class StrictJsonDeserializationVisitor extends JsonDeserializationVisitor
         }
 
         return parent::visitDouble($data, $type, $context);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getResult($data)
+    {
+        return $data;
+    }
+
+    public function getVisitor(): DeserializationVisitorInterface
+    {
+        return $this;
     }
 }
