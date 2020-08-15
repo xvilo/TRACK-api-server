@@ -108,7 +108,7 @@ All URIs are relative to *http://localhost*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*AdministrationApiInterface* | [**listTotalsForYearAndWeek**](Resources/docs/Api/AdministrationApiInterface.md#listtotalsforyearandweek) | **GET** /api/v1//totals/{year}/{week} | List all timers
+*AdministrationApiInterface* | [**listTotalsForYearAndWeek**](Resources/docs/Api/AdministrationApiInterface.md#listtotalsforyearandweek) | **GET** /api/v1/totals/{year}/{week} | List all timers
 *TimersApiInterface* | [**listTimers**](Resources/docs/Api/TimersApiInterface.md#listtimers) | **GET** /api/v1/timers | List all timers
 
 
